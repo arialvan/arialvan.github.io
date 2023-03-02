@@ -52,3 +52,38 @@ footer{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width:800px){
+    section {
+        flex-direction: column;
+    }
+    .sidebar{
+        width: auto;
+        height: fit-content;
+    }
+    article{
+        width: auto;
+    }
+}
+
+@media (max-width:400px){
+    .grid{
+        grid-template-columns: auto auto;
+    }
+    article{
+        overflow-y: auto;
+    }
+}
+
+@media (max-width:300px){
+    .grid{
+        grid-template-columns: auto;
+    }
+    article{
+        overflow-y: auto;
+    }
+    .sidebar{
+        width: auto;
+        height: fit-content;
+    }
+}
